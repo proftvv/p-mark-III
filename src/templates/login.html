@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - P-Mark-III</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1>🚀 P-Mark-III</h1>
+                <p>Business Intelligence System</p>
+            </div>
+            
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            <form method="POST" action="{{ url_for('login') }}" class="login-form">
+                <div class="form-group">
+                    <label for="username">👤 Kullanıcı Adı</label>
+                    <input type="text" id="username" name="username" 
+                           placeholder="proftvv" required autofocus>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">🔑 Şifre</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="••••" required>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="remember" id="remember">
+                        Beni Hatırla
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-login">
+                    Giriş Yap
+                </button>
+            </form>
+            
+            <div class="login-footer">
+                <p>Version 1.0.2 - Phase P-1</p>
+                <p>© 2025 P-Mark-III</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
