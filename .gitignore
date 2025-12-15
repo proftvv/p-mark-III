@@ -1,0 +1,51 @@
+# Ignore debug files
+debug/*.log
+debug/*.tmp
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore API keys
+config/keys.json
+config/api-keys.json
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.cache
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Ignore Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Excel exports
+exports/*.xlsx
+output/*.xlsx
+
+# Ignore user data
+data/users.db
+data/*.db
+*.sqlite
+*.sqlite3

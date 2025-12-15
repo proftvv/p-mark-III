@@ -1,0 +1,30 @@
+{
+  "currentVersion": "1.0.1",
+  "projectPhase": "P-1",
+  "versionHistory": [
+    {
+      "version": "1.0.1",
+      "updateName": "Mars",
+      "phase": "P-1",
+      "date": "2025-12-15",
+      "description": "Initial project setup and structure creation",
+      "changes": [
+        "Created project folder structure",
+        "Initialized version control system",
+        "Created memory and documentation files",
+        "Set up debug infrastructure"
+      ]
+    }
+  ],
+  "versionRules": {
+    "1.x.x": "Stable versions - only changes when manually requested",
+    "x.1.x": "Major updates - increases when P- phase changes",
+    "x.x.1": "Bug fixes and hotfixes - auto-increment"
+  },
+  "folderVersions": {
+    "src": "1.0.1",
+    "debug": "1.0.1",
+    "versions": "1.0.1",
+    "docs": "1.0.1"
+  }
+}
